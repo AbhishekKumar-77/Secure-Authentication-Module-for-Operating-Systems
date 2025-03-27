@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Authentication Module</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Authentication Module</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        
+        <button onclick="register()">Register</button>
+        <button onclick="otpLogin()">Login with OTP</button>
+        <button onclick="faceLogin()">Login with Face</button>
+        <button onclick="Biometric()">Login with Biometric</button>
+
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
